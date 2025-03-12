@@ -4406,4 +4406,11 @@ object frmPrincipal: TfrmPrincipal
       ExplicitWidth = 194
     end
   end
+  object ttmControlaVelocidade: TTimer
+    Enabled = False
+    Interval = 10
+    OnTimer = ttmControlaVelocidadeTimer
+    Left = 392
+    Top = 536
+  end
 end
