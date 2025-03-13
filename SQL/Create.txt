@@ -1,0 +1,18 @@
+CREATE	DATABASE	SISTEMA_VENDAS;
+USE	SISTEMA_VENDAS;
+CREATE	TABLE	VENDEDORES(
+	Vend_Id			INTEGER		PRIMARY		KEY		IDENTITY	NOT NULL,
+	Vend_Nome		VARCHAR(50)	COLLATE Latin1_General_CI_AS	NOT NULL,
+	Vend_Data		DATE										NOT	NULL,
+	Vend_Cpf		VARCHAR(20)	COLLATE Latin1_General_CI_AS    NOT NULL,
+	Vend_Telefone	VARCHAR(20)	COLLATE Latin1_General_CI_AS	NOT NULL,
+	Vend_Cep		VARCHAR(10)	COLLATE Latin1_General_CI_AS,
+	Vend_Endereco	VARCHAR(100)	COLLATE Latin1_General_CI_AS,
+	Vend_Bairro		VARCHAR(50)	COLLATE Latin1_General_CI_AS,
+	Vend_Cidade		VARCHAR(50)	COLLATE Latin1_General_CI_AS,
+	Vend_Estado		CHAR(2)		COLLATE Latin1_General_CI_AS,
+	Vend_Email		VARCHAR(50)	COLLATE Latin1_General_CI_AS,
+	Vend_Comissao	DECIMAL(10,2),
+	Vend_Operador	VARCHAR(50)	COLLATE Latin1_General_CI_AS	NOT NULL,
+);
+SELECT * FROM VENDEDORES;

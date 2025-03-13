@@ -60,6 +60,7 @@ type
     procedure btnMovimentosClick(Sender: TObject);
     procedure btnFinanceiroClick(Sender: TObject);
     procedure btnConsultasClick(Sender: TObject);
+    procedure btnVendedoresClick(Sender: TObject);
 
   private
     { Private declarations }
@@ -73,6 +74,8 @@ var
 implementation
 
 {$R *.dfm}
+
+uses uCadVendedores, UDM;
 
 procedure TfrmPrincipal.btnCadastrosClick(Sender: TObject);
 begin
@@ -158,6 +161,16 @@ begin
                              MB_ICONINFORMATION) = IDYES then
   begin
     Close;
+  end;
+end;
+
+procedure TfrmPrincipal.btnVendedoresClick(Sender: TObject);
+begin
+  frmCadVendedores := TfrmCadVendedores.Create(Self);
+  try
+    frmCadVendedores.ShowModal;
+  finally
+    frmCadVendedores.Free;
   end;
 end;
 

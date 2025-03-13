@@ -1559,6 +1559,7 @@ object frmPrincipal: TfrmPrincipal
       ParentShowHint = False
       ShowHint = False
       Spacing = 6
+      OnClick = btnVendedoresClick
       ExplicitWidth = 202
     end
     object btnGrupos: TSpeedButton
