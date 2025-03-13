@@ -51,7 +51,6 @@ type
     SpeedButton14: TSpeedButton;
     SpeedButton15: TSpeedButton;
     SpeedButton16: TSpeedButton;
-    ttmControlaVelocidade: TTimer;
     procedure imgBotaoMenuClick(Sender: TObject);
     procedure btnSairClick(Sender: TObject);
     procedure btnCadastrosClick(Sender: TObject);
@@ -61,7 +60,7 @@ type
     procedure btnMovimentosClick(Sender: TObject);
     procedure btnFinanceiroClick(Sender: TObject);
     procedure btnConsultasClick(Sender: TObject);
-    procedure ttmControlaVelocidadeTimer(Sender: TObject);
+
   private
     { Private declarations }
   public
@@ -188,36 +187,13 @@ begin
   pnlSubMenuFinanceiro.Visible    := False;
   pnlSubMenuConsultas.Visible     := False;
 
+
   if pnlBotoes.Width = 0 then
-    ttmControlaVelocidade.Tag := 1  // EXPANDIR
-    else
-    ttmControlaVelocidade.Tag := -1; // RECOLHER
-
-    ttmControlaVelocidade.Enabled := True; // Ativa o Timer para fazer a animação
-
-//   CÓDIGO ANTES DO CHAT
-//  if pnlBotoes.Width = 0 then
-//    pnlBotoes.Width := 220
-//  else
-//    pnlBotoes.Width := 0
+    pnlBotoes.Width := 220
+  else
+    pnlBotoes.Width := 0
 end;
 
-procedure TfrmPrincipal.ttmControlaVelocidadeTimer(Sender: TObject);
-begin
-  if ttmControlaVelocidade.Tag = 1 then
-  begin
-        if pnlBotoes.Width < 220 then
-      pnlBotoes.Width := pnlBotoes.Width + 10  // Aumenta 10px por ciclo
-    else
-      ttmControlaVelocidade.Enabled := False;  // Para quando atingir 220px
-  end
-  else if ttmControlaVelocidade.Tag = -1 then
-  begin
-    if pnlBotoes.Width > 0 then
-      pnlBotoes.Width := pnlBotoes.Width - 10  // Diminui 10px por ciclo
-    else
-      ttmControlaVelocidade.Enabled := False;  // Para quando atingir 0px
-  end;
-end;
+
 
 end.

@@ -26,7 +26,6 @@ object frmPrincipal: TfrmPrincipal
     Color = 5606655
     ParentBackground = False
     TabOrder = 0
-    ExplicitWidth = 1077
     object imgBotaoMenu: TImage
       AlignWithMargins = True
       Left = 10
@@ -309,7 +308,6 @@ object frmPrincipal: TfrmPrincipal
     Color = 13816530
     ParentBackground = False
     TabOrder = 1
-    ExplicitHeight = 723
     object btnSair: TSpeedButton
       AlignWithMargins = True
       Left = 3
@@ -1432,8 +1430,6 @@ object frmPrincipal: TfrmPrincipal
     Color = 4605510
     ParentBackground = False
     TabOrder = 2
-    ExplicitTop = 593
-    ExplicitWidth = 1077
   end
   object pnlSubMenuCadastro: TPanel
     Left = 223
@@ -4405,12 +4401,5 @@ object frmPrincipal: TfrmPrincipal
       ExplicitTop = 6
       ExplicitWidth = 194
     end
-  end
-  object ttmControlaVelocidade: TTimer
-    Enabled = False
-    Interval = 10
-    OnTimer = ttmControlaVelocidadeTimer
-    Left = 392
-    Top = 536
   end
 end
