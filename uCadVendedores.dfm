@@ -2,8 +2,8 @@ object frmCadVendedores: TfrmCadVendedores
   Left = 0
   Top = 0
   Caption = 'frmCadVendedores'
-  ClientHeight = 563
-  ClientWidth = 1032
+  ClientHeight = 479
+  ClientWidth = 977
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -17,41 +17,462 @@ object frmCadVendedores: TfrmCadVendedores
   object pnlFormTotal: TPanel
     Left = 0
     Top = 0
-    Width = 1032
-    Height = 563
+    Width = 977
+    Height = 479
     Margins.Top = 1
     Align = alClient
     BevelOuter = bvNone
     Color = 7233103
     ParentBackground = False
     TabOrder = 0
-    ExplicitLeft = 232
-    ExplicitTop = 152
-    ExplicitWidth = 185
-    ExplicitHeight = 41
+    ExplicitWidth = 1032
+    ExplicitHeight = 563
     object Panel1: TPanel
       AlignWithMargins = True
       Left = 10
       Top = 10
-      Width = 1012
-      Height = 488
+      Width = 957
+      Height = 394
       Margins.Left = 10
       Margins.Top = 10
       Margins.Right = 10
-      Margins.Bottom = 0
+      Margins.Bottom = 10
       Align = alClient
       BevelOuter = bvNone
       Color = 15792127
       ParentBackground = False
       TabOrder = 0
-      ExplicitWidth = 615
-      ExplicitHeight = 63
+      ExplicitTop = 11
+      ExplicitWidth = 962
+      ExplicitHeight = 411
+      object Label1: TLabel
+        Left = 6
+        Top = 8
+        Width = 70
+        Height = 25
+        Margins.Left = 10
+        Margins.Top = 10
+        Margins.Bottom = 10
+        Caption = 'C'#243'digo:'
+        FocusControl = DBEdit1
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label2: TLabel
+        Left = 486
+        Top = 10
+        Width = 59
+        Height = 25
+        Caption = 'Nome:'
+        FocusControl = edtNome
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label3: TLabel
+        Left = 244
+        Top = 8
+        Width = 46
+        Height = 25
+        Caption = 'Data:'
+        FocusControl = edtData
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label4: TLabel
+        Left = 6
+        Top = 80
+        Width = 39
+        Height = 25
+        Margins.Left = 10
+        Margins.Top = 10
+        Margins.Bottom = 10
+        Caption = 'CPF:'
+        FocusControl = edtCpf
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label5: TLabel
+        Left = 285
+        Top = 80
+        Width = 80
+        Height = 25
+        Caption = 'Telefone:'
+        FocusControl = edtTelefone
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label6: TLabel
+        Left = 576
+        Top = 80
+        Width = 39
+        Height = 25
+        Caption = 'CEP:'
+        FocusControl = edtCep
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label7: TLabel
+        Left = 6
+        Top = 152
+        Width = 88
+        Height = 25
+        Margins.Left = 10
+        Margins.Top = 10
+        Margins.Bottom = 10
+        Caption = 'Endere'#231'o:'
+        FocusControl = edtEndereco
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label8: TLabel
+        Left = 575
+        Top = 152
+        Width = 60
+        Height = 25
+        Caption = 'Bairro:'
+        FocusControl = edtBairro
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label9: TLabel
+        Left = 6
+        Top = 226
+        Width = 66
+        Height = 25
+        Margins.Left = 10
+        Margins.Top = 10
+        Margins.Bottom = 10
+        Caption = 'Cidade:'
+        FocusControl = edtCidade
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label10: TLabel
+        Left = 332
+        Top = 226
+        Width = 64
+        Height = 25
+        Caption = 'Estado:'
+        FocusControl = edtEstado
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label11: TLabel
+        Left = 510
+        Top = 226
+        Width = 52
+        Height = 25
+        Caption = 'Email:'
+        FocusControl = edtEmail
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label12: TLabel
+        Left = 6
+        Top = 312
+        Width = 84
+        Height = 25
+        Margins.Left = 10
+        Margins.Top = 10
+        Margins.Bottom = 10
+        Caption = 'Comiss'#227'o'
+        FocusControl = edtComissao
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label13: TLabel
+        Left = 391
+        Top = 312
+        Width = 92
+        Height = 25
+        Caption = 'Operador:'
+        FocusControl = edtOperador
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object DBEdit1: TDBEdit
+        Left = 6
+        Top = 39
+        Width = 232
+        Height = 33
+        Margins.Left = 10
+        Margins.Top = 10
+        Margins.Bottom = 10
+        DataField = 'Vend_Id'
+        DataSource = dsFornecedores
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 0
+      end
+      object edtNome: TDBEdit
+        Left = 479
+        Top = 41
+        Width = 466
+        Height = 33
+        DataField = 'Vend_Nome'
+        DataSource = dsFornecedores
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 1
+      end
+      object edtData: TDBEdit
+        Left = 244
+        Top = 39
+        Width = 205
+        Height = 33
+        DataField = 'Vend_Data'
+        DataSource = dsFornecedores
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 2
+      end
+      object edtCpf: TDBEdit
+        Left = 6
+        Top = 111
+        Width = 273
+        Height = 33
+        Margins.Left = 10
+        Margins.Top = 10
+        Margins.Bottom = 10
+        DataField = 'Vend_Cpf'
+        DataSource = dsFornecedores
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 3
+      end
+      object edtTelefone: TDBEdit
+        Left = 285
+        Top = 111
+        Width = 285
+        Height = 33
+        DataField = 'Vend_Telefone'
+        DataSource = dsFornecedores
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 4
+      end
+      object edtCep: TDBEdit
+        Left = 576
+        Top = 111
+        Width = 370
+        Height = 33
+        DataField = 'Vend_Cep'
+        DataSource = dsFornecedores
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 5
+      end
+      object edtEndereco: TDBEdit
+        Left = 6
+        Top = 183
+        Width = 563
+        Height = 33
+        Margins.Left = 10
+        Margins.Top = 10
+        Margins.Bottom = 10
+        DataField = 'Vend_Endereco'
+        DataSource = dsFornecedores
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 6
+      end
+      object edtBairro: TDBEdit
+        Left = 576
+        Top = 183
+        Width = 369
+        Height = 33
+        DataField = 'Vend_Bairro'
+        DataSource = dsFornecedores
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 7
+      end
+      object edtCidade: TDBEdit
+        Left = 6
+        Top = 259
+        Width = 320
+        Height = 33
+        Margins.Left = 10
+        Margins.Top = 10
+        Margins.Bottom = 10
+        DataField = 'Vend_Cidade'
+        DataSource = dsFornecedores
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 8
+      end
+      object edtEstado: TDBEdit
+        Left = 332
+        Top = 257
+        Width = 172
+        Height = 35
+        DataField = 'Vend_Estado'
+        DataSource = dsFornecedores
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 9
+      end
+      object edtEmail: TDBEdit
+        Left = 510
+        Top = 257
+        Width = 435
+        Height = 33
+        DataField = 'Vend_Email'
+        DataSource = dsFornecedores
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 10
+      end
+      object edtComissao: TDBEdit
+        Left = 6
+        Top = 343
+        Width = 379
+        Height = 33
+        Margins.Left = 10
+        Margins.Top = 10
+        Margins.Bottom = 10
+        DataField = 'Vend_Comissao'
+        DataSource = dsFornecedores
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 11
+      end
+      object edtOperador: TDBEdit
+        Left = 391
+        Top = 343
+        Width = 554
+        Height = 33
+        DataField = 'Vend_Operador'
+        DataSource = dsFornecedores
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 12
+      end
+      object dtpData: TDateTimePicker
+        Left = 244
+        Top = 39
+        Width = 229
+        Height = 33
+        Date = 45730.455254085650000000
+        Time = 45730.455254085650000000
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -19
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+        TabOrder = 13
+      end
     end
     object pnlBotoes: TPanel
       AlignWithMargins = True
       Left = 10
-      Top = 499
-      Width = 1012
+      Top = 415
+      Width = 957
       Height = 54
       Margins.Left = 10
       Margins.Top = 1
@@ -62,8 +483,8 @@ object frmCadVendedores: TfrmCadVendedores
       Color = 15792127
       ParentBackground = False
       TabOrder = 1
-      ExplicitTop = 384
-      ExplicitWidth = 787
+      ExplicitTop = 499
+      ExplicitWidth = 1012
       object btnNovo: TBitBtn
         AlignWithMargins = True
         Left = 6
@@ -294,7 +715,6 @@ object frmCadVendedores: TfrmCadVendedores
           FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
         ParentFont = False
         TabOrder = 1
-        ExplicitLeft = 111
       end
       object btnSalvar: TBitBtn
         AlignWithMargins = True
@@ -410,7 +830,6 @@ object frmCadVendedores: TfrmCadVendedores
           DDD6AC968B8F7A6FF2EFEDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
         ParentFont = False
         TabOrder = 2
-        ExplicitLeft = 223
       end
       object btnCancelar: TBitBtn
         AlignWithMargins = True
@@ -526,7 +945,6 @@ object frmCadVendedores: TfrmCadVendedores
           FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
         ParentFont = False
         TabOrder = 3
-        ExplicitLeft = 335
       end
       object btnPesquisar: TBitBtn
         AlignWithMargins = True
@@ -642,11 +1060,10 @@ object frmCadVendedores: TfrmCadVendedores
           FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
         ParentFont = False
         TabOrder = 4
-        ExplicitLeft = 583
       end
       object btnSair: TBitBtn
         AlignWithMargins = True
-        Left = 876
+        Left = 821
         Top = 3
         Width = 130
         Height = 48
@@ -760,7 +1177,7 @@ object frmCadVendedores: TfrmCadVendedores
         ParentFont = False
         TabOrder = 5
         OnClick = btnSairClick
-        ExplicitLeft = 864
+        ExplicitLeft = 876
       end
       object btnExcluir: TBitBtn
         AlignWithMargins = True
@@ -876,8 +1293,12 @@ object frmCadVendedores: TfrmCadVendedores
           FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
         ParentFont = False
         TabOrder = 6
-        ExplicitLeft = 463
       end
     end
+  end
+  object dsFornecedores: TDataSource
+    DataSet = DM.qryCadFornecedores
+    Left = 184
+    Top = 304
   end
 end

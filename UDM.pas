@@ -8,7 +8,20 @@ uses
 type
   TDM = class(TDataModule)
     Conexao: TADOConnection;
-    ADOQuery1: TADOQuery;
+    qryCadFornecedores: TADOQuery;
+    qryCadFornecedoresVend_Id: TAutoIncField;
+    qryCadFornecedoresVend_Nome: TStringField;
+    qryCadFornecedoresVend_Data: TWideStringField;
+    qryCadFornecedoresVend_Cpf: TStringField;
+    qryCadFornecedoresVend_Telefone: TStringField;
+    qryCadFornecedoresVend_Cep: TStringField;
+    qryCadFornecedoresVend_Endereco: TStringField;
+    qryCadFornecedoresVend_Bairro: TStringField;
+    qryCadFornecedoresVend_Cidade: TStringField;
+    qryCadFornecedoresVend_Estado: TStringField;
+    qryCadFornecedoresVend_Email: TStringField;
+    qryCadFornecedoresVend_Comissao: TBCDField;
+    qryCadFornecedoresVend_Operador: TStringField;
   private
     { Private declarations }
   public
